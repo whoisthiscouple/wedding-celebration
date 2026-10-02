@@ -6,8 +6,8 @@ Premium "dark garden reveal" intro (envelope opens into a paper invitation), the
 
 **Stack:** React 19 + TypeScript + Vite 7 + Tailwind CSS 4 (CSS-first `@theme`) + Framer Motion.
 
-- Live site: `https://whoisthiscouple.github.io/wedding-invitation/` (official `actions/deploy-pages`, no `gh-pages` branch)
-- Remote: `origin` → github.com/whoisthiscouple/wedding-invitation
+- Live site: `https://whoisthiscouple.github.io/wedding-celebration/` (official `actions/deploy-pages`, no `gh-pages` branch)
+- Remote: `origin` → github.com/whoisthiscouple/wedding-celebration
 - Working branch: `main` (deploys on every push to `main`).
 
 ## Scripts
@@ -131,7 +131,7 @@ Asset files/prompts live in the parent folder (`Logo-No-BG.png`, `Stamp Seal.png
 3. **Concurrency:** `group: pages`, `cancel-in-progress: true` so overlapping pushes don't queue duplicate deploys.
 4. **Build job:** `actions/checkout@v4`, `actions/setup-node@v4` with `node-version: 20` and `cache: npm`, then `npm ci` (fails if `package-lock.json` is out of sync).
 5. **Build env:** `npm run build` with `VITE_STATICFORMS_API_KEY: ${{ secrets.STATIC_FORM_API_KEY }}` injected — Vite inlines it into the bundle (same value as local `.env`). Keep the repo secret in sync if the token rotates.
-6. **Publish:** `actions/upload-pages-artifact@v3` uploads `dist/`; the `deploy` job (`environment: github-pages`) releases it via `actions/deploy-pages@v4`. Site serves at `https://whoisthiscouple.github.io/wedding-invitation/`.
+6. **Publish:** `actions/upload-pages-artifact@v3` uploads `dist/`; the `deploy` job (`environment: github-pages`) releases it via `actions/deploy-pages@v4`. Site serves at `https://whoisthiscouple.github.io/wedding-celebration/`.
 7. **Result:** each run shows under Actions → "Deploy to GitHub Pages"; green check + updated site means live, usually < 2 minutes.
 
 ## Conventions & gotchas

@@ -14,5 +14,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
-  base: "/wedding-invitation/",
+  base: "/wedding-celebration/",
 });
