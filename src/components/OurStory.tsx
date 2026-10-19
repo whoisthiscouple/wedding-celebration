@@ -20,7 +20,7 @@ export default function OurStory() {
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
           <Divider label="OUR JOURNEY" />
-          <h2 className="font-display mt-6 text-4xl text-charcoal md:text-5xl">A Love Story</h2>
+          <h2 className="font-display mt-6 text-4xl text-charcoal md:text-5xl">Our Journey</h2>
           <p className="font-body mx-auto mt-4 max-w-xl text-lg text-charcoal-light/80 md:text-xl">
             Every great story begins with a single glance, a shared laugh, a moment that quietly changes everything.
           </p>
