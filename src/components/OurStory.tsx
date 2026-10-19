@@ -3,34 +3,14 @@ import Divider from "./Divider";
 
 const chapters = [
   {
-    year: "2020",
-    title: "A Serendipitous Meeting",
-    text: "A single “hi” through the blur of online classes became the only conversation that ever mattered. What followed was a friendship filled with endless conversations, shared laughs, and countless little moments they’ll always cherish.",
-  },
-  {
-    year: "2022",
-    title: "Finding the Same Rhythm",
-    text: "Their first dance was never about the steps. It was about two hearts finding the same beat. When the song ended, the rhythm stayed.",
-  },
-  {
-    year: "2023",
-    title: "Something More",
-    text: "Somewhere along the way, a beautiful friendship quietly became something more. And just like that, a new chapter began.",
-  },
-  {
     year: "2024",
     title: "The Winning Pair",
     text: "They graduated side by side. Who would have thought the first and second rank holders would end up being each other’s biggest cheerleaders?",
   },
   {
-    year: "2025",
-    title: "Still Us",
-    text: "Their worlds took them in different directions. The miles grew, but somehow, they stayed close — still choosing each other, every day.",
-  },
-  {
     year: "2026",
     title: "The Celebration Begins",
-    text: "In March, a ring said everything. Two families came together, blending traditions to build one story. And now, a beautiful new chapter begins — all because of one simple “hi.”",
+    text: "In March, a ring said everything. Two families came together, blending traditions to build one story.",
   },
 ];
 

@@ -1,7 +1,7 @@
 # CLAUDE.md — Roop & Dhvani Wedding Invite
 
 ## Project Overview
-Single-page wedding invitation site for **Roop Lala** (groom) & **Dhvani Shah** (bride), married **25 November 2026**.
+Single-page wedding invitation site for **Roop Lala** (groom) & **Dhvani Shah** (bride), married **4 December 2026**.
 Premium "dark garden reveal" intro (envelope opens into a paper invitation), then a full scrolling site (story, events, countdown, families, gallery, venue, RSVP, finale). Deployed to GitHub Pages.
 
 **Stack:** React 19 + TypeScript + Vite 7 + Tailwind CSS 4 (CSS-first `@theme`) + Framer Motion.
@@ -27,7 +27,7 @@ npm run typecheck  # tsc --noEmit
 | `src/components/Nav.tsx` | Fixed nav, scroll-triggered bg, mobile hamburger. |
 | `src/components/Hero.tsx` | Full-screen emerald hero, R&D logo, gold-shine initials, gold particle rise. |
 | `src/components/OurStory.tsx` | Timeline chapters (data-driven). |
-| `src/components/Events.tsx` | 3-card event grid (data-driven). |
+| `src/components/Events.tsx` | Event card grid (data-driven; 1 card in this variant). |
 | `src/components/Countdown.tsx` | Live countdown; golden message when it hits zero. |
 | `src/components/Families.tsx` | Two family cards (data-driven). |
 | `src/components/Gallery.tsx` | Masonry (CSS columns) + lightbox; images from Google Drive. |
@@ -44,15 +44,15 @@ npm run typecheck  # tsc --noEmit
 > Reference design project lives in the sibling folder `../reveal-animation` (own Vite app). The intro was adapted from it and recolored to this site's palette — when the reference is updated, port those changes.
 
 ## Couple / Event Facts
-- **Wedding date:** 25 November 2026 (Countdown uses `2026-11-25T00:00:00+05:30`).
+- **Wedding date:** 4 December 2026 (Countdown uses `2026-12-04T00:00:00+05:30`).
 - **Events:**
-  1. Bridal Shower — 24 NOVEMBER, 4:00 PM (maroon/gold accent)
-  2. The Wedding Ceremony — 25 NOVEMBER, 10:00 AM (emerald accent)
-  3. Reception — 25 NOVEMBER, 7:30 PM (gold/emerald accent)
+  1. The Wedding Ceremony — 4 DECEMBER, 10:00 AM (emerald accent)
+  2. Reception — 4 DECEMBER, 7:30 PM (gold/emerald accent)
+  (No Bridal Shower in this variant.)
 - **Families:**
   - Groom — **Family of Roop**, Mr. & Mrs. Lala: Abhijit (Father), Ruby (Mother), Neha (Sister), Son of Ruby Lala.
   - Bride — **Family of Dhvani**, Mr. & Mrs. Shah: Atul (Father), Sonal (Mother), Manan (Brother), Daughter of Reena Shah.
-- **Story chapters:** 2020 Serendipitous Meeting · 2022 Falling in Step · 2023 A Question of Forever · 2026 Two Worlds, One Family · 2026 The Celebration Begins. Note two chapters share `year: "2026"` → the map uses `key={i}`, not the year.
+- **Story chapters:** 2024 The Winning Pair · 2026 The Celebration Begins (family-friendly two-entry variant).
 
 ## Design System
 ### Colors (Tailwind tokens + CSS vars)
@@ -94,7 +94,7 @@ npm run typecheck  # tsc --noEmit
 ### Revealed scene
 - Envelope unfolds (flap `rotateX 180`, backface hidden); paper card rises.
 - Paper (`intro-paper`): ivory, gold inner frame, corner L-markers, emboss pattern. **No** green leaf emboss at top/bottom anymore (removed).
-- Content: logo → "Together with Their Families" → **Roop & Dhvani** (maroon, `.text-gold-shine` initials, `white-space: nowrap`, `clamp(2.2rem,6.5vw,2.9rem)` so it never wraps) → "request the pleasure of your company" → date "25 — NOVEMBER — 2026" → "Celebration Venue / details to be announced".
+- Content: logo → "Together with Their Families" → **Roop & Dhvani** (maroon, `.text-gold-shine` initials, `white-space: nowrap`, `clamp(2.2rem,6.5vw,2.9rem)` so it never wraps) → "request the pleasure of your company" → date "4 — DECEMBER — 2026" → "Celebration Venue / details to be announced".
 - Enter button: **borderless** (no `.btn-reveal`) → `.intro-enter-btn`; hover = gold underline sweeping from left + arrow nudging up-right + text shifts maroon.
 - Caption: *"An invitation, made with love."*
 
