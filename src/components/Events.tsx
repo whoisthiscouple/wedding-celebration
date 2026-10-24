@@ -17,7 +17,7 @@ interface EventItem {
 const events: EventItem[] = [
   {
     name: "Wedding Dinner",
-    time: "7:30 PM",
+    time: "7:00 PM",
     label: "4 DECEMBER",
     description: "An evening of celebration — good food, warm conversations, laughter, and memories to cherish for years to come.",
     venue: "Royal Dine - Marigold Banquet Hall",

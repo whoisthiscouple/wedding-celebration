@@ -47,7 +47,7 @@ npm run typecheck  # tsc --noEmit
 - **Wedding date:** 4 December 2026 (Countdown uses `2026-12-04T00:00:00+05:30`).
 - **Events:**
   1. The Wedding Ceremony — 4 DECEMBER, 10:00 AM (emerald accent)
-  2. Reception — 4 DECEMBER, 7:30 PM (gold/emerald accent)
+  2. Reception — 4 DECEMBER, 7:00 PM (gold/emerald accent)
   (No Bridal Shower in this variant.)
 - **Families:**
   - Groom — **Family of Roop**, Mr. & Mrs. Lala: Abhijit (Father), Ruby (Mother), Neha (Sister), Son of Ruby Lala.
