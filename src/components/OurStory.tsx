@@ -43,7 +43,7 @@ export default function OurStory() {
               >
                 <span
                   className={`absolute left-0 top-1 flex h-10 w-10 items-center justify-center rounded-full border-2 bg-warmwhite md:top-0 ${
-                    i % 2 === 0 ? "md:-left-5" : "md:-left-5"
+                    i % 2 === 0 ? "md:-left-5" : "md:left-auto md:-right-5"
                   } ${i === chapters.length - 1 ? "border-gold shadow-[0_0_12px_rgba(201,162,39,0.3)]" : "border-gold/40"}`}
                 >
                   <span className={`h-3 w-3 rounded-full ${i === chapters.length - 1 ? "bg-gold" : "bg-gold/60"}`} />
